@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="app">
+    <div v-for="(example, index) in examples">
+        <h2>Example #{{index}}</h2>
+        <div v-for="row of example">
+            <span v-for="value of row">{{value}} </span>
+        </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
